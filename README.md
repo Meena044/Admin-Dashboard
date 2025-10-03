@@ -32,9 +32,3 @@ https://frontend-admin-dashboard.netlify.app/
 - Structuring UI components
 - Semantic HTML
 
----
-
-## 📂 Getting Started
-1. Clone this repo:
-   git clone https://github.com/yourusername/admin-dashboard.git
-2. Open index.html in your browser.
