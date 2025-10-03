@@ -16,7 +16,7 @@
                 </div>
                 <div id="userId">
                     <img src="images/avatar-boy-svgrepo-com (1).svg" alt="">
-                    <h2>Joseph Vijay</h2>
+                    <h2>Davina</h2>
                 </div>
             </div>
             <div class="bottom">
@@ -24,7 +24,7 @@
                     <img src="images/avatar-boy-svgrepo-com (1).svg" alt="">
                     <div>
                         <h4 >Hi, there</h4>
-                        <h1 >Joseph Vijay <span>(@vijay_official)</span> </h1>
+                        <h1 >Davina Johnson <span>(@dav_ai_lead)</span> </h1>
                     </div>
                 </div>
                 <div class="buttons">
@@ -58,7 +58,42 @@
             <div id="projects">
                 <div>
                     <h3>Super Cool Project</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem facilis consectetur provident? Dolorem, similique explicabo! Aliquam totam ipsam necessitatibus.</p>
+                    <p>Weekly productivity hours saved across departments using AI tools.</p>
+
+            
+                    <div class="chart-container">
+                    <canvas id="barChart"></canvas>
+                    </div>
+
+                    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                    <script>
+                    const ctxBar = document.getElementById('barChart').getContext('2d');
+                    new Chart(ctxBar, {
+                        type: 'bar',
+                        data: {
+                            labels: ['Marketing', 'Engineering','Sales', 'HR', 'Finance'],
+                            datasets: [{
+                                label: 'Hours Saved',
+                                data: [120, 200, 170, 90, 160],
+                                backgroundColor: ['#004d6d','#6d0000','#6d006d','#a32c00','#6d5f00'],
+                                barThickness: 30,        // width of each bar
+                                maxBarThickness: 30
+                            }]
+                        },
+                        options: {
+                            responsive: true,          //  chart resizes with container
+                            maintainAspectRatio: false, // allows height from CSS container
+                            plugins: {
+                                legend: { display: false }
+                            },
+                            scales: {
+                                y: { beginAtZero: true }
+                            }
+                        }
+                    });
+                    </script>
+
+
                     <div class="like">
                         <img src="images/heart-alt-svgrepo-com.svg" alt="like icon">
                         <img src="images/eye-svgrepo-com.svg" alt=" add to watch list icon">
@@ -67,7 +102,59 @@
                 </div>
                 <div>
                     <h3>Less Cool Project</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem facilis consectetur provident? Dolorem, similique explicabo! Aliquam totam ipsam necessitatibus.</p>
+                    <p>AI usage breakdown by feature across all teams this quarter.</p>
+
+
+                    <div class="chart-container">
+                        <canvas id="pieChart"></canvas>
+                    </div>
+                    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                    <script>
+                    new Chart(document.getElementById("pieChart"), {
+                    type: "pie",
+                    data: {
+                        labels: [
+                        "AI Chat & Writing", 
+                        "AI Workflows", 
+                        "AI Code Review", 
+                        "AI Data Insights", 
+                        "AI Design Tools"
+                        ],
+                        datasets: [{
+                        data: [40, 25, 15, 10, 10],
+                        backgroundColor: [
+                            "#6d0000", 
+                            "#004d6d", 
+                            "#006d2c", 
+                            "#6d006d", 
+                            "#6d5f00"  
+                        ],
+                        hoverBackgroundColor: [
+                            "#ff4d4d", 
+                            "#4da6ff",
+                            "#66ff66", 
+                            "#ff66ff", 
+                            "#ffeb3b"  
+                        ]
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                        legend: {
+                            position: "right",  
+                            labels: {
+                            boxWidth: 20,
+                            padding: 15
+                            }
+                        }
+                        }
+                    }
+                    });
+                    </script>
+
+
                     <div class="like">
                         <img src="images/heart-alt-svgrepo-com.svg" alt="like icon">
                         <img src="images/eye-svgrepo-com.svg" alt=" add to watch list icon">
@@ -76,7 +163,7 @@
                 </div>
                 <div>
                     <h3>Impossible App</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem facilis consectetur provident? Dolorem, similique explicabo! Aliquam totam ipsam necessitatibus.</p>
+                    <p>AI Workflow Builder created 650 automations for finance teams. Avg. time saved: 22 hrs/week.</p>
                     <div class="like">
                         <img src="images/heart-alt-svgrepo-com.svg" alt="like icon">
                         <img src="images/eye-svgrepo-com.svg" alt=" add to watch list icon">
@@ -85,7 +172,7 @@
                 </div>
                 <div>
                     <h3>Easy Peasy App</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem facilis consectetur provident? Dolorem, similique explicabo! Aliquam totam ipsam necessitatibus.</p>
+                    <p>Smart AI Writer drafted 3,200 blog posts and emails. Engagement rate increased by 18%.</p>
                     <div class="like">
                         <img src="images/heart-alt-svgrepo-com.svg" alt="like icon">
                         <img src="images/eye-svgrepo-com.svg" alt=" add to watch list icon">
@@ -94,7 +181,7 @@
                 </div>
                 <div>
                     <h3>Add Blocker</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem facilis consectetur provident? Dolorem, similique explicabo! Aliquam totam ipsam necessitatibus.</p>
+                    <p>AI Spam Filter blocked 2.4M phishing emails across 12 companies this quarter.</p>
                     <div class="like">
                         <img src="images/heart-alt-svgrepo-com.svg" alt="like icon">
                         <img src="images/eye-svgrepo-com.svg" alt=" add to watch list icon">
@@ -103,7 +190,7 @@
                 </div>
                 <div>
                     <h3>Money Maker</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem facilis consectetur provident? Dolorem, similique explicabo! Aliquam totam ipsam necessitatibus.</p>
+                    <p>AI Sales Bot closed $1.2M in deals this month. Conversion rate improved by 27%.</p>
                     <div class="like">
                         <img src="images/heart-alt-svgrepo-com.svg" alt="like icon">
                         <img src="images/eye-svgrepo-com.svg" alt=" add to watch list icon">
@@ -118,17 +205,17 @@
                     <div id="announcments">
                         <div>
                             <h4>Site Maintenance</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem facilis consectetur provident.</p>
+                            <p>AI server upgrade scheduled for Oct 15. Downtime: approx. 20 min.</p>
                             <hr>
                         </div>
                         <div>
                             <h4>Community Share day</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem facilis consectetur provident</p>
+                            <p>Join our AI Innovators meetup on Oct 20. Showcase your automation workflows.</p>
                             <hr>
                         </div>
                         <div>
                             <h4>Updated Privacy Policy</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem facilis consectetur provident</p>
+                            <p>AI model logs are anonymized. No personal data stored beyond 30 days.</p>
                 
                         </div>
                     </div>
@@ -140,35 +227,35 @@
                             <img src="images/avatar-boy-svgrepo-com.svg">
                             <div>
                                 <h4>@tegan</h4>
-                                <p>World Peace Builder</p>
+                                <p>Built an AI that designs marketing campaigns automatically.</p>
                             </div>
                         </div>
                         <div class="icon">
                             <img src="images/avatar-girl-svgrepo-com.svg">
                             <div>
                                 <h4>@megan</h4>
-                                <p>Super Cool Project</p>
+                                <p>Launched SmartDesk: AI-driven task planner.</p>
                             </div>
                         </div>
                         <div class="icon">
                             <img src="images/avatar-girl-svgrepo-com (1).svg">
                             <div>
                                 <h4>@kendall</h4>
-                                <p>Life Changing App</p>
+                                <p>Developed AI assistant for doctors in rural areas.</p>
                             </div>
                         </div>
                         <div class="icon">
                             <img src="images/avatar-girl-svgrepo-com (2).svg">
                             <div>
                                 <h4>@alex</h4>
-                                <p>No Traffic Maker</p>
+                                <p>Created no-code AI app builder.</p>
                             </div>
                         </div>
                         <div class="icon">
                             <img src="images/avatar-girl-svgrepo-com.svg">
                             <div>
                                 <h4>@taylor</h4>
-                                <p>Greatest Singer</p>
+                                <p>AI music generator with 1M+ downloads.</p>
                             </div>
                         </div>
                     </div>
