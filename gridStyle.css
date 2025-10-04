@@ -3,6 +3,7 @@ body{
     padding: 0;
     background-color: #d6bb93;
     font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+
 }
 
 .container{
@@ -150,10 +151,10 @@ span{
 }
 
 .chart-container {
-    position: relative;
-    width: 100%;           
-    max-width: 600px;      
-    height: 250px;        
+  position: relative;
+  width: 100%;           
+  max-width: 600px;      
+ height: 250px;        
 }
 
 canvas {
