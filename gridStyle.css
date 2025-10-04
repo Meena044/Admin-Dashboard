@@ -150,10 +150,10 @@ span{
 }
 
 .chart-container {
-  position: relative;
-  width: 100%;           
-  max-width: 600px;      
- height: 250px;        
+    position: relative;
+    width: 100%;           
+    max-width: 600px;      
+    height: 250px;        
 }
 
 canvas {
